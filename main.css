@@ -56,7 +56,7 @@ form.search-bar input[type=text] {
     padding: 12px;
     font-size: 17px;
     border: none;
-    width: 76%;
+    width: 81%;
     background: white;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -64,7 +64,7 @@ form.search-bar input[type=text] {
   }
   
  form.search-bar button {
-    width: 10%;
+    width: 5%;
     padding: 4px;
     background: white;
     color:rgb(102, 102, 255);
