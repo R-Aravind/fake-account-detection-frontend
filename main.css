@@ -9,20 +9,19 @@
 .main-box
 {
     background-color: #BFE8FE;;
-    height: 84vh;
-    width: 65%;
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50 auto;
 }
 
 
 .box{
-    width: inherit;
+    width:67%;
     display: flex;
     flex-direction: column;
-    margin-top: 74px;
-    margin-left: -80px;
+    margin:0 auto;
+    padding: 4%;
     
 }
 
@@ -31,7 +30,7 @@
     display: flex;
     justify-content: space-around;
     margin-left: -14px;
-    width: 56%;
+    width: 45%;
     display: flex;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.7rem;
@@ -55,9 +54,9 @@
 form.search-bar input[type=text] {
 
     padding: 12px;
-    font-size: 10px;
+    font-size: 17px;
     border: none;
-    width: 77%;
+    width: 76%;
     background: white;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -103,7 +102,7 @@ form.search-bar input[type=text] {
 
     .button1
     {
-        height: 35px;
+        height: 45px;
         font-size: 0.71rem;
         width: 150px;
         border: none;
@@ -111,8 +110,8 @@ form.search-bar input[type=text] {
         font-family: 'Open Sans', sans-serif;
         background-color:  rgb(67, 150, 228);
         position: relative;
-        left:520px;
-        top:-44px;
+        left:710px;
+        top:-52px;
         
     }
 
@@ -121,7 +120,7 @@ form.search-bar input[type=text] {
     .box2
     {
         margin-top: -20px;
-        height: 60%;
+        height: 70%;
         width: 85%;
         background-color: rgb(255, 255, 255);
         box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -130,10 +129,10 @@ form.search-bar input[type=text] {
 
     .label
     {
-        padding: 3%;
-        width: 75%;
-        font-size: 0.71rem;
-        height: 32%;
+        padding: 4%;
+        width: 78%;
+        font-size: 1rem;
+        height: 35%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -153,6 +152,7 @@ form.search-bar input[type=text] {
 
     .line-break
     {
+        padding: 2%;
         width: 100%;
     }
    
@@ -162,7 +162,7 @@ form.search-bar input[type=text] {
         border-radius: 1.7px;
         text-align: center;
         height: max-content;
-        width: 80px;
+        width: 100px;
         background-color:rgb(215, 244, 248);
         color:  rgb(31, 128, 202);
         border: 1.7px solid rgb(197, 234, 240) ;
@@ -183,17 +183,27 @@ form.search-bar input[type=text] {
     .maintext .title
     {
         font-family: 'Open Sans', sans-serif;
-        font-size: 0.81rem;  
-        padding: 2%;
+        font-size: 1rem;  
+        padding: 3%;
         color:rgb(67, 150, 228);
     }
 
 
     .maintext .details
     {
-        color: rgb(201, 197, 197);
-        font-size: 0.84rem;
+        color: rgb(186, 182, 182);
+        font-size: 0.94rem;
         padding-top: 0.31%;
-        padding-left: 2%;
-        padding-right: 1.62%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+
+    .copyright
+    {
+        color: rgb(119, 192, 247);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        margin-top: 19px;
+        font-size: 0.94rem;
     }
