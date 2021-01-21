@@ -103,7 +103,7 @@ form.search-bar input[type=text] {
 
     .button1
     {
-        height: 45px;
+        height: 48px;
         font-size: 0.71rem;
         width: 150px;
         border: none;
@@ -111,7 +111,7 @@ form.search-bar input[type=text] {
         font-family: 'Open Sans', sans-serif;
         background-color:  rgb(67, 150, 228);
         position: relative;
-        left:710px;
+        left:698px;
         top:-52px;
         
     }
