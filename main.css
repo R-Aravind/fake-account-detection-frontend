@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-around;
     margin-left: -14px;
-    width: 45%;
+    width: 40%;
     display: flex;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.7rem;
@@ -54,12 +54,13 @@
 form.search-bar input[type=text] {
 
     padding: 12px;
+    color: rgba(250, 249, 249, 0.2);
     font-size: 17px;
     border: none;
     width: 81%;
     background: white;
     outline: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(179, 173, 173, 0.2);
     
   }
   
@@ -71,7 +72,7 @@ form.search-bar input[type=text] {
     font-size: 13px;
     border: none;
     cursor: pointer;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     
   }
   
@@ -123,20 +124,21 @@ form.search-bar input[type=text] {
         height: 70%;
         width: 85%;
         background-color: rgb(255, 255, 255);
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
     }
 
 
     .label
     {
-        padding: 4%;
-        width: 78%;
+        padding: 3%;
+        width: 60%;
         font-size: 1rem;
-        height: 35%;
+        height: 38%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-content: space-around;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
     }
 
     .fake-label
@@ -145,7 +147,7 @@ form.search-bar input[type=text] {
         color:rgb(226, 75, 120) ;
         padding: 2px;
         height: max-content;
-        width: 65px;
+        width: 68px;
         text-align: center;
         border: 1.7px solid rgb(226, 75, 120) ;
     }
@@ -158,11 +160,11 @@ form.search-bar input[type=text] {
    
     .confidence-label
     {
-        padding: 2.2px;
+        padding: 6px;
         border-radius: 1.7px;
         text-align: center;
         height: max-content;
-        width: 100px;
+        width: max-content;
         background-color:rgb(215, 244, 248);
         color:  rgb(31, 128, 202);
         border: 1.7px solid rgb(197, 234, 240) ;
@@ -172,12 +174,14 @@ form.search-bar input[type=text] {
     {
         color: white;
         border-radius: 1.7px;
-        padding: 2px;
-        height: max-content;
+        padding: 6px;
+        
+         height: 33px;
         width: 70px;
         text-align: center;
         background-color:rgb(243, 99, 142);
         border: 1.7px solid rgb(226, 75, 120) ;
+
     }
 
     .maintext .title
@@ -207,3 +211,24 @@ form.search-bar input[type=text] {
         margin-top: 19px;
         font-size: 0.94rem;
     }
+
+  hr
+  {
+    border: 1px solid rgb(204, 204, 204);
+      width: 93%;
+      margin: 0 auto;
+  }
+
+  .community
+  {
+      display: flex;
+      justify-content: space-between;
+      width: 65%;
+  }
+
+  .cs{
+    height: 33px;
+
+  }
+
+  
