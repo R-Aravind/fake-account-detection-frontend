@@ -140,6 +140,11 @@ h1 {
     font-size: 0.8em;
 }
 
+.result-line > .chip > a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .result-line > .real {
     font-weight: 700;
 
@@ -175,6 +180,7 @@ h1 {
 }
 
 .card-content > .about {
+    color: rgba(0,0,0,0.3);
     width: 91%;
     margin-top: 5px;
     margin-bottom: 30px;
