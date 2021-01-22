@@ -25,10 +25,10 @@
         <div class="search">
             <div class="leftie">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" class="search-bar" name="" id="" value="https://www.instagram.com/">
+                <input type="text" class="search-bar" name="" id="input-box" placeholder="instagram username">
             </div>
             <div class="rightie">
-                <input type="button" class="detect-button" value="Detect">
+                <input type="button" class="detect-button" id="button" value="Detect" onclick="predict()">
             </div>
         </div>
 
@@ -36,14 +36,17 @@
             <div class="leftie card-leftie">
                 <div class="card">
 
-                    <div class="result-box">
+                    <div class="result-box" id="result">
                         <div class="result-line">
-                            <div class="chip fake">fake</div>
-                            <div class="chip real">real</div>
-                            <div class="chip">instagram</div>
-                            <div class="chip">username</div>
+                            <div class="chip" id="loading">loading results</div>
+                            <div class="chip fake" id="fake">fake</div>
+                            <div class="chip report" id="error">error</div>
+                            <div class="chip report" id="no-user">user doesnt exist</div>
+                            <div class="chip real" id="real">real</div>
+                            <div class="chip" id="insta">instagram</div>
+                            <div class="chip" id="username">username</div>
                         </div>
-                        <div class="result-line">
+                        <div class="result-line" id="line-2">
                             <div class="chip report"><a href="https://help.instagram.com/192435014247952">report</a>
                             </div>
                             <div class="chip"><a
@@ -75,6 +78,8 @@
         </div>
 
     </main>
+
+    <script src="js/main.js"></script>
 
 </body>
 
