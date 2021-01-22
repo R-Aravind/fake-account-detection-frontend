@@ -111,10 +111,54 @@ h1 {
 }
 
 .result-box {
-    height: 10vh;
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+
     border-bottom: 1px #E5E5E5 solid;
+}
+
+
+
+.result-line {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.result-line > .chip {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 5px;
+    background: #D7F1FE;
+    color: #159AF7;
+    margin-right: 15px;
+    font-size: 0.8em;
+}
+
+.result-line > .real {
+    font-weight: 700;
+
+    background-color: #fff;
+    color: #159AF7;
+    border: 1px solid #159AF7;
+}
+
+.result-line > .fake {
+    font-weight: 700;
+
+    background-color: #fff;
+    color: #EA4C89;
+    border: 1px solid #EA4C89;
+}
+
+.result-line > .report {
+    background-color: #EA4C89;
+    color: #fff;
 }
 
 .card-content {
