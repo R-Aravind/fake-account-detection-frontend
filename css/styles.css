@@ -85,7 +85,7 @@ h1 {
 .detect-button {
     margin-left: 30px;
     width: 60%;
-
+    cursor: pointer;
     font-weight: 700;
 
     padding: 20px 30px 20px 30px;

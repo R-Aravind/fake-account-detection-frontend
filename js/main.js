@@ -38,34 +38,37 @@ let predict = () => {
     document.getElementById('username').style.display = "none";
     document.getElementById('line-2').style.display = "none";
 
-    getPrediction(api_url + input.value, (err, data) => {
 
-        document.getElementById("loading").style.display = "none";
-        if (err != null) {
+    setTimeout(
+        getPrediction(api_url + input.value, (err, data) => {
 
-            console.error(err);
-            document.getElementById('error').style.display = "block";
-            document.getElementById('no-user').style.display = "block";
+            document.getElementById("loading").style.display = "none";
+            if (err != null) {
 
-        } else {
-            let is_real = data['is_real'];
-            let username = data['userid'];
+                console.error(err);
+                document.getElementById('error').style.display = "block";
+                document.getElementById('no-user').style.display = "block";
 
-            console.log(is_real)
-            console.log(username)
-
-            document.getElementById('insta').style.display = "block";
-            document.getElementById('username').style.display = "block";
-            document.getElementById('username').innerHTML = username;
-
-            if (is_real) {
-                document.getElementById('real').style.display = "block";
             } else {
-                document.getElementById('line-2').style.display = "flex";
-                document.getElementById('fake').style.display = "block";
-            }
-        }
+                let is_real = data['is_real'];
+                let username = data['userid'];
 
-        button.value = "Detect Another";
-    });
+                console.log(is_real)
+                console.log(username)
+
+                document.getElementById('insta').style.display = "block";
+                document.getElementById('username').style.display = "block";
+                document.getElementById('username').innerHTML = username;
+
+                if (is_real) {
+                    document.getElementById('real').style.display = "block";
+                } else {
+                    document.getElementById('line-2').style.display = "flex";
+                    document.getElementById('fake').style.display = "block";
+                }
+            }
+
+            button.value = "Detect Another";
+        }), 6000);
 }
+
